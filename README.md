@@ -1,5 +1,17 @@
 # TURTLEBOT CONTROL APP
 
+## INDEX:
+  
+  - [1. Introduction](#p1)
+  - [2. Environments](#p2)  
+  - [2.1. Simulated Environment](#p2.1) 
+  - [2.2. Real Environment](#p2.2)  
+  - [3. Video](#p3)  
+  - [4. Credits](#p4)  
+
+
+## Introduction:
+
 Esto es el trabajo final de ingeniería Robótica en la Universidad de Alicante para la asignatura de Robots Móviles. En este, se han desarrollado distintos códigos en `Python 2` para que un `Turtlebot` pueda resolver una serie de tareas. Estas tareas son:
 
   - Seguimiento de personas.
@@ -11,20 +23,11 @@ Esto es el trabajo final de ingeniería Robótica en la Universidad de Alicante 
 
 Para ejecutar una tarea u otra, se hace uso de una `aplicación android` desde la cual podemos conectarnos y enviarle por tcp las tareas que queremos que realice. Todo esto está estructurado dentro de la máquina de estados Smach. De forma que cada vez que la app envía un mensaje al Turtlebot, este comprueba si el mesaje es válido y cambia al estado indicado en el mensaje.
 
-
-## INDEX
-  - [Environments](#p1)  
-  - [Emphasis](#p1.1) 
-  - [Emphasis](#p1.2)  
-  - [Emphasis](#p2)  
-  - [Emphasis](#p3)  
-
-
-## Entornos de trabajo: <a name="p1"/>
+## Entornos de trabajo: <a name="p2"/>
 
 Puesto que no siempore se ha tenido acceso al robot, se han creado dos versiones. Una en `Python 2` que permite controlar a un Turtlebot real y otra en `Python 3`, hecha en `ROS Noetic` desde la que es posible controlar una simulacion en Gazebo:
     
-  ### - Entorno Simulado: <a name="p1.1"/>
+  ### - Entorno Simulado: <a name="p2.1"/>
    
   Para el entorno simulado, se ha programado con `Python 3` en `ROS Noetic`. Para poder trabajar en este entorno, primero de todo es neceario abrir el simulador de Gazebo con un mapa ya creado. Para ello se ha hecho uso del mapa house por defecto. Para ello creamos los siguientes dos comandos en un terminal.
 
@@ -42,7 +45,7 @@ Puesto que no siempore se ha tenido acceso al robot, se han creado dos versiones
   Una vez hecho esto, ya solo queda ejecutar el programa `main.py` y la app android. La conexión es mediante tcp desde el `puerto: 12343`.
 
 
-  ### - Entorno Real: <a name="p1.2"/>
+  ### - Entorno Real: <a name="p2.2"/>
   
   Para el entorno real, se ha programado con `Python 2` en `ROS Kinetic`. Para poder trabajar en este entorno, primero de todo es neceario inicializar el Turtlebot real. Para ello ejecutamos los siguientes dos comandos en terminales distintas.
 
@@ -61,7 +64,7 @@ Puesto que no siempore se ha tenido acceso al robot, se han creado dos versiones
     
   Con esto, se nos abrirá `rviz` y ya solo será necesario añadir los módulos correspondientes para que se muestre el mapa, la nube de puntos y el robot. Una vez hecho esto, ya solo queda ejecutar el programa `main.py` y la app android. La conexión es mediante tcp desde el `puerto: 12343`.
 
-## Video del funcionamiento: <a name="p2"/>
+## Video del funcionamiento: <a name="p3"/>
 
 Si hacemos click en el gif, podremos ver un vídeo del funcionamiento del proyecto.
 
@@ -71,7 +74,7 @@ Si hacemos click en el gif, podremos ver un vídeo del funcionamiento del proyec
   </a>
 </p>
 
-## Creditos: <a name="p3"/>
+## Creditos: <a name="p4"/>
 
 Proyecto realizado por:
 
