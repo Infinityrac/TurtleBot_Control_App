@@ -13,4 +13,4 @@ El objetivo del TFG es desarrollar una interfad de control hombre máquina de ba
 - Desarrollar una simulación mediante PeterCorke en python3.
 
 
-[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
+[![Watch the video](https://www.youtube.com/watch?v=j-LswYOt--s)
