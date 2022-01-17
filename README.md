@@ -13,7 +13,7 @@ El objetivo del TFG es desarrollar una interfad de control hombre máquina de ba
 - Desarrollar una simulación mediante PeterCorke en python3.
 
 <p align="center">
-![Demo](https://github.com/Infinityrac/TurtleBot_Control_App/blob/main/clip.gif?raw=true)
+![](https://github.com/Infinityrac/TurtleBot_Control_App/blob/main/clip.gif?raw=true)
 </p>
 
 ![](https://github.com/Infinityrac/TurtleBot_Control_App/blob/main/clip.gif?raw=true)
