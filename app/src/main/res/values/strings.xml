@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">ROS App</string>
+    <string name="path_bt_name">Execute Path</string>
+    <string name="record_bt_name">Record Path</string>
+    <string name="text_mode">MODE: -</string>
+    <string name="connect_button">CONNECT</string>
+    <string name="explain_message">Enter your server IP and port here:</string>
+    <string name="IP_message">192.168.1.1</string>
+    <string name="PORT_message">4000</string>
+    <string name="wait_bt_name">Wait</string>
+    <string name="state_text">Select Mode</string>
+    <string name="goHome_bt_name">Go Home</string>
+    <string name="setHome_bt_name">Set Home</string>
+    <string name="follow_bt_name">Follow Person</string>
+    <string name="forget_bt_name">Forget Path</string>
+    <string name="exit_bt_name">Exit</string>
+    <string name="text_feedback">-</string>
+    <string name="teleop_bt_name">Joystick Control</string>
+
+    <string name="angle_lab">Angle:</string>
+    <string name="power_lab">Power:</string>
+    <string name="direction_lab">Direc:</string>
+    <string name="none"></string>
+    <string name="front_lab">Front</string>
+    <string name="front_right_lab">Front-Right</string>
+    <string name="right_lab">Right</string>
+    <string name="right_bottom_lab">Right-Bottom</string>
+    <string name="bottom_lab">Bottom</string>
+    <string name="bottom_left_lab">Left-Bottom</string>
+    <string name="left_lab">Left</string>
+    <string name="left_front_lab">Front-Left</string>
+    <string name="center_lab">Center</string>
+    <string name="rights_lab">http://zerokol.com</string>
+</resources>

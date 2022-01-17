@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <Button
+        android:id="@+id/button_execute"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/path_bt_name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_forget"
+        app:layout_constraintEnd_toStartOf="@+id/button_forget"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_record"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/record_bt_name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_follow"
+        app:layout_constraintEnd_toStartOf="@+id/button_follow"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_mode"
+        android:layout_width="220dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/text_mode"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_exit" />
+
+    <Button
+        android:id="@+id/button_w"
+        android:layout_width="352dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/wait_bt_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/state_text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="53dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eps" />
+
+    <Button
+        android:id="@+id/button_follow"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/follow_bt_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_record"
+        app:layout_constraintTop_toBottomOf="@+id/button_goHome" />
+
+    <Button
+        android:id="@+id/button_setHome"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/setHome_bt_name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_goHome"
+        app:layout_constraintEnd_toStartOf="@+id/button_goHome"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_goHome"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/goHome_bt_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_setHome"
+        app:layout_constraintTop_toBottomOf="@+id/button_w" />
+
+    <Button
+        android:id="@+id/button_forget"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/forget_bt_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_execute"
+        app:layout_constraintTop_toBottomOf="@+id/button_follow" />
+
+    <Button
+        android:id="@+id/button_exit"
+        android:layout_width="352dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/exit_bt_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_teleop" />
+
+    <Button
+        android:id="@+id/button_teleop"
+        android:layout_width="352dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/teleop_bt_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_forget" />
+
+    <TextView
+        android:id="@+id/text_feedback"
+        android:layout_width="170dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/text_feedback"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_mode" />
+
+
+    <!--    <io.github.controlwear.virtual.joystick.android.JoystickView
+        android:layout_width="139dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="590dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <io.github.controlwear.virtual.joystick.android.JoystickView
+        android:id="@+id/joystickView"
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginEnd="16dp"
+        app:JV_backgroundColor="@color/purple_500"
+        app:JV_borderColor="@color/purple_700"
+        app:JV_borderWidth="4dp"
+        app:JV_buttonColor="@color/white"
+        app:JV_buttonSizeRatio="25%"
+        app:JV_fixedCenter="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--<LinearLayout
+        android:id="@+id/InfoLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="620dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/angletextViewLab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/angle_lab"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/angleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/none"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/powerTextViewLab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/power_lab"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/powerTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/none"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/directionTextViewLab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/direction_lab"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/directionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/none"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+-->
+</androidx.constraintlayout.widget.ConstraintLayout>

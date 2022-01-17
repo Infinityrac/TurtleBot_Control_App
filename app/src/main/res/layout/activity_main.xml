@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_main"
+        android:layout_width="188dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/connect_button"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_PORT" />
+
+    <TextView
+        android:id="@+id/text_explain"
+        android:layout_width="296dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:hint="@string/explain_message"
+        android:text="@string/explain_message"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/enter_IP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="75dp"
+        android:ems="10"
+        android:hint="@string/IP_message"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_IP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_IP" />
+
+    <EditText
+        android:id="@+id/enter_PORT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="75dp"
+        android:ems="10"
+        android:hint="@string/PORT_message"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_PORT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/enter_IP" />
+
+    <TextView
+        android:id="@+id/text_PORT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:text="PORT:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_IP" />
+
+    <TextView
+        android:id="@+id/text_IP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"
+        android:text="IP:"
+        app:layout_constraintBottom_toTopOf="@+id/text_PORT"
+        app:layout_constraintEnd_toEndOf="@+id/text_PORT"
+        app:layout_constraintTop_toBottomOf="@+id/text_explain" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="92dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="30dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/eps" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
