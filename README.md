@@ -13,10 +13,20 @@ El objetivo del TFG es desarrollar una interfad de control hombre máquina de ba
 - Desarrollar una simulación mediante PeterCorke en python3.
 
 <p align="center">
-  <img src="clip.gif" alt="animated" href="https://google.com" />
+  <a href="https://youtu.be/j-LswYOt--s">
+    <img src="clip.gif" alt="animated"/>
+  <\a>
 </p>
 
 [![Watch the video](https://youtu.be/<https://youtu.be/j-LswYOt--s>)
+
+
+<p>
+  <a href="https://youtu.be/-DXBQPeLIV4">
+    <img src="https://github.com/petercorke/robotics-toolbox-python/raw/master/docs/figs/holistic_youtube.png" width="560">
+  </a>
+</p>
+
 
 ## More About the Link Format for `.md` or `.wiki` files
 
