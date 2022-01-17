@@ -38,13 +38,13 @@ Not always real robot can be used, two versions have been created:
    
   Simulated environment has been coded with `Python3` on `ROS Noetic`. First of all, open Gazebo simulator, in this case, ROS defalut house map is used. On one terminal execute following commands:
 
-    $export TURTLEBOT3_MODEL=waffle
-    roslaunch turtlebot3_gazebo turtlebot3_house.launch
+    $ export TURTLEBOT3_MODEL=waffle
+    $ roslaunch turtlebot3_gazebo turtlebot3_house.launch
 
   Open new terminal and execute navigation module (is is necessary to have previosly mapped the area):
   
-    export TURTLEBOT3_MODEL=waffle
-    roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/house.yaml
+    $ export TURTLEBOT3_MODEL=waffle
+    $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/house.yaml
   _Note: Both files (`.yaml` and `.pgm`) must be on `HOME` directory._
    
   This will open a rviz window where robot, map and localization point cloud can be seen. Use 2D POSE ESTIMATE to estimate the current position of the robot in the map.
@@ -56,18 +56,18 @@ Not always real robot can be used, two versions have been created:
   
   Real environment has been coded using `Python 2` on `ROS Kinetic`. `TurtleBot` inicialization is needed, so this following commands must be launched on different terminals:
 
-    roslaunch turtlebot_bringup minimal.launch
-    roslaunch turtlebot_bringup hokuyo_ust101x.launch
+    $ roslaunch turtlebot_bringup minimal.launch
+    $ roslaunch turtlebot_bringup hokuyo_ust101x.launch
     
   Open new terminal and execute the navigation module:
   
-    export TURTLEBOT_3D_SENSOR=astra
-    roslaunch turtlebot_navigation amcl_demo.launch map_file:=$HOME/house.yaml
+    $ export TURTLEBOT_3D_SENSOR=astra
+    $ roslaunch turtlebot_navigation amcl_demo.launch map_file:=$HOME/house.yaml
    _Note: Both files (`.yaml` and `.pgm`) must be on `HOME` directory._
     
   `TurtleBot` can't open an `rviz`window so another device is needed. On new device execute `setvars.bash`, open a new terminal and execute `rviz`:
   
-    rosrun rviz rviz
+    $ rosrun rviz rviz
     
   `rviz` window will be opened. Add modules to show robot, map and point cloud.
   
