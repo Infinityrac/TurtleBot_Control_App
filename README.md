@@ -1,9 +1,16 @@
-# TurtleBot Control App
-Este es mi primera prueba tanto con Git como en Github.
+# TURTLEBOT CONTROL APP
 
-El objetivo es aprender a utilizar un gestor de versiones y además un repositorio online para usarlo como copia de seguridad de mi proyecto para el TFG de ingeniería ROBÓTICA en la UA.
+Esto es el trabajo final de ingeniería Robótica en la Universidad de Alicante para la asignatura de Robots Móviles. En este, se han desarrollado distintos códigos en Python2 pra que un Turtlebot pueda resolver una serie de tareas. Estas tareas son:
 
-El objetivo del TFG es desarrollar una interfad de control hombre máquina de bajo coste para controlar brazos robot mediante visión por computador.
+  - Seguimiento de personas.
+  - Grabar/Olvidar rutas.
+  - Reproductor de rutas.
+  - Establecer/Olvidar home.
+  - Ir al home.
+  - Control mediante Joystick.
+
+Para ejecutar una tarea u otra, se hace uso de una aplicación android desde la cual podemos conectarnos y enviarle por tcp las tareas que queremos que realice. Todo esto está estructurado dentro de la máquina de estados Smach. De forma que cada vez que la app envía un mensaje al Turtlebot, este comprueba si el mesaje es válido y cambia al estado indicado en el mensaje.
+
 
 ## De momento los objetivos son:
 
