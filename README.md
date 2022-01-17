@@ -17,3 +17,19 @@ El objetivo del TFG es desarrollar una interfad de control hombre máquina de ba
 </p>
 
 [![Watch the video](https://youtu.be/<https://youtu.be/j-LswYOt--s>)
+
+### .md:
+
+       [[images/myimage.jpg]]
+       [[/images/myimage.jpg]]
+
+       ![](../../blob/master/images/myimage.jpg)
+    
+     - the markdown `!()[]` syntax works but not relative paths
+
+     `<img src="images/myimage.jpg">`
+    
+     - img tag works but only with relative path
+
+     `<figure><img src="images/myimage.jpg"><figcaption>image caption</figcaption></figure>`
+
