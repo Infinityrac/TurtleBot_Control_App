@@ -27,6 +27,10 @@ _Nota: Ambos ficheros del mapa (`.yaml` y `.pgm`) deben estar en el directorio `
   
     export TURTLEBOT3_MODEL=waffle
     roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/house.yaml
+    
+  Esto nos abrirá además una ventana de rviz desde la que podremos visualizar el robot, el mapa y la nube de puntos que representa las posibles posiciones del robot. Seleccionando la opción de `2D POSE ESTIMATE` y haciendo click en el mapa en la posición en la que se encuentra el robot en la simulación haremos que la navegación se ubique entorno a ese punto.
+  
+  Una vez hecho esto, ya solo queda ejecutar el programa `main.py` y este se conectará 
 
 
 ### Entorno Real:
