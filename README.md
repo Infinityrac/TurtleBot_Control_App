@@ -33,7 +33,7 @@ Puesto que no siempore se ha tenido acceso al robot, se han creado dos versiones
   Una vez hecho esto, ya solo queda ejecutar el programa `main.py` y la app android. La conexión es mediante tcp desde el `puerto: 12343`.
 
 
-  ### Entorno Real:
+  ### - Entorno Real:
   
   Para el entorno real, se ha programado con `Python 2` en `ROS Kinetic`. Para poder trabajar en este entorno, primero de todo es neceario inicializar el Turtlebot real. Para ello ejecutamos los siguientes dos comandos en terminales distintas.
 
