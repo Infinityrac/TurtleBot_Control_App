@@ -13,11 +13,11 @@ Para ejecutar una tarea u otra, se hace uso de una `aplicación android` desde l
 
 
 ## INDEX
-  [Headers](#p1)  
-  [Emphasis](#p1.1) 
-  [Emphasis](#p1.2)  
-  [Emphasis](#p2)  
-  [Emphasis](#p3)  
+  - [Environments](#p1)  
+  - [Emphasis](#p1.1) 
+  - [Emphasis](#p1.2)  
+  - [Emphasis](#p2)  
+  - [Emphasis](#p3)  
 
 
 ## Entornos de trabajo: <a name="p1"/>
