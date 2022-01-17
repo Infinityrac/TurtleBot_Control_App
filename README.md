@@ -12,6 +12,6 @@ El objetivo del TFG es desarrollar una interfad de control hombre máquina de ba
 - Probar a obtener las coordenaadas articulares y pasárselo a una simulación de un brazo robot.
 - Desarrollar una simulación mediante PeterCorke en python3.
 
-<iframe width="1268" height="713" src="https://www.youtube.com/embed/j-LswYOt--s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![](https://github.com/Infinityrac/TurtleBot_Control_App/blob/main/clip.gif?raw=true)
 
 [![Watch the video](https://youtu.be/<https://youtu.be/j-LswYOt--s>)
