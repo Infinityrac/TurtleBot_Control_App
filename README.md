@@ -12,37 +12,40 @@
 
 ## Introduction:
 
-Esto es el trabajo final de ingeniería Robótica en la Universidad de Alicante para la asignatura de Robots Móviles. En este, se han desarrollado distintos códigos en `Python 2` para que un `Turtlebot` pueda resolver una serie de tareas. Estas tareas son:
+This is the final project of 4º Robotic Engineering at University of Alicante for the subject Mobile Robots. Different codes have been developed in `Python` so that a `TurtleBot` can do some tasks. This task are:
 
-  - Seguimiento de personas.
-  - Grabar/Olvidar rutas.
-  - Reproductor de rutas.
-  - Establecer/Olvidar home.
-  - Ir al home.
-  - Control mediante Joystick.
+  - Person following
+  - Save/Delete path
+  - Execute path
+  - Set/Delete home
+  - Go home
+  - Joystick control
 
-Para ejecutar una tarea u otra, se hace uso de una `aplicación android` desde la cual podemos conectarnos y enviarle por tcp las tareas que queremos que realice. Todo esto está estructurado dentro de la máquina de estados Smach. De forma que cada vez que la app envía un mensaje al Turtlebot, este comprueba si el mesaje es válido y cambia al estado indicado en el mensaje.
+To execute one task or another, an `Android app` is used. This app connect with the robot and send information using TCP. 
+Code is estructured through a SMACH state machine. When the app send a message to the robot, code check if it is valid and change its state.
 
-## Entornos de trabajo: <a name="p2"/>
+## Work environments: <a name="p2"/>
 
-Puesto que no siempore se ha tenido acceso al robot, se han creado dos versiones. Una en `Python 2` que permite controlar a un Turtlebot real y otra en `Python 3`, hecha en `ROS Noetic` desde la que es posible controlar una simulacion en Gazebo:
+Not always real robot can be used, two versions have been created:
+  - ROS Noetic simulation
+  - Real TurtleBot control
     
-  ### - Entorno Simulado: <a name="p2.1"/>
+  ### - Simulated environment: <a name="p2.1"/>
    
-  Para el entorno simulado, se ha programado con `Python 3` en `ROS Noetic`. Para poder trabajar en este entorno, primero de todo es neceario abrir el simulador de Gazebo con un mapa ya creado. Para ello se ha hecho uso del mapa house por defecto. Para ello creamos los siguientes dos comandos en un terminal.
+  Simulated environment has been coded with `Python3` on `ROS Noetic`. First of all, open Gazebo simulator, in this case, ROS defalut house map is used. On one terminal execute following commands:
 
     export TURTLEBOT3_MODEL=waffle
     roslaunch turtlebot3_gazebo turtlebot3_house.launch
 
-  Tras esto, abrimos un nuev terminal y ejecutamos los siguientes comandos para iniciar el módulo de navegacion:
+  Open new terminal and execute navigation module (is is necessary to have previosly mapped the area):
   
     export TURTLEBOT3_MODEL=waffle
     roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/house.yaml
-  _Nota: Ambos ficheros del mapa (`.yaml` y `.pgm`) deben estar en el directorio `HOME`._
-    
-  Esto nos abrirá además una ventana de `rviz` desde la que podremos visualizar el robot, el mapa y la nube de puntos que representa las posibles posiciones del robot. Seleccionando la opción de `2D POSE ESTIMATE` y haciendo click en el mapa en la posición en la que se encuentra el robot en la simulación haremos que la navegación se ubique entorno a ese punto.
+  _Note: Both files (`.yaml` and `.pgm`) must be on `HOME` directory._
+   
+  This will open a rviz window where robot, map and localization point cloud can be seen. Use 2D POSE ESTIMATE to estimate the current position of the robot in the map.
   
-  Una vez hecho esto, ya solo queda ejecutar el programa `main.py` y la app android. La conexión es mediante tcp desde el `puerto: 12343`.
+  Execute code `main.py` and the `Android app`. TCP conexion uses `port:12343`
 
 
   ### - Entorno Real: <a name="p2.2"/>
