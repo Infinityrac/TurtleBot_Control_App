@@ -72,6 +72,7 @@ Not always real robot can be used, two versions have been created:
   `rviz` window will be opened. Add modules to show robot, map and point cloud.
   
   Execute code `main.py` and open `Andorid app`. TCP conexion uses `port:12343`
+  
   _Note: in case of port malfunction, change the port and restart the application._
 
 
