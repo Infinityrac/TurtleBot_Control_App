@@ -1,5 +1,9 @@
 # TURTLEBOT CONTROL APP
 
+<p align="center">
+  <img src="doc/Portada.jpg" alt="animated"/>
+</p>
+
 ## INDEX:
   
   - [1. Introduction](#p1)
@@ -74,7 +78,7 @@ Si hacemos click en el gif, podremos ver un vídeo del funcionamiento del proyec
 
 <p align="center">
   <a href="https://youtu.be/j-LswYOt--s">
-    <img src="clip.gif" alt="animated"/>
+    <img src="doc/clip.gif" alt="animated"/>
   </a>
 </p>
 
