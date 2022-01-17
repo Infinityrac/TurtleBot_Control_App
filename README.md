@@ -54,7 +54,7 @@ Not always real robot can be used, two versions have been created:
 
   ### - Real Environment: <a name="p2.2"/>
   
-  Real environment has been coded using `Python 2` on `ROS Kinetic`. `TurtleBot` inicialization is needed, so this following commands must be launched on different terminals:
+  Real environment has been coded using `Python2` on `ROS Kinetic`. `TurtleBot` inicialization is needed, so this following commands must be launched on different terminals:
 
     $ roslaunch turtlebot_bringup minimal.launch
     $ roslaunch turtlebot_bringup hokuyo_ust101x.launch
