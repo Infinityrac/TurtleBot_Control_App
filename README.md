@@ -13,9 +13,21 @@ Para ejecutar una tarea u otra, se hace uso de una `aplicación android` desde l
 
 ## Entornos de trabajo:
 
-Puesto que no siempore se ha tenido acceso al robot, se han creado dos versiones. Una en `Python 2` que permite controlar a un Turtlebot real y otra en `Python 3`, hecha en `ROS Noetic` que permite controlar una simulacion en Gazebo.
+Puesto que no siempore se ha tenido acceso al robot, se han creado dos versiones. Una en `Python 2` que permite controlar a un Turtlebot real y otra en `Python 3`, hecha en `ROS Noetic` desde la que es posible controlar una simulacion en Gazebo:
+    
+  ### - Entorno Simulado:
+   
+  Para el entorno simulado, se ha programado con `Python 3` en `ROS Noetic`. Para poder trabajar en este entorno, primero de todo es neceario abrir el simulador de Gazebo con un mapa ya creado. Para ello se ha hecho uso del mapa house por defecto. Para ello creamos los siguientes dos comandos en un terminal.
 
-### Entorno Simulado:
+    export TURTLEBOT3_MODEL=waffle
+    roslaunch turtlebot3_gazebo turtlebot3_house.launch
+_Nota: Ambos ficheros del mapa (`.yaml` y `.pgm`) deben estar en el directorio `HOME`._
+
+  Tras esto, abrimos un nuev terminal y ejecutamos los siguientes comandos para iniciar el módulo de navegacion:
+  
+    export TURTLEBOT3_MODEL=waffle
+    roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/house.yaml
+
 
 ### Entorno Real:
 
@@ -36,16 +48,15 @@ Puesto que no siempore se ha tenido acceso al robot, se han creado dos versiones
 - Desarrollar una simulación mediante PeterCorke en python3.
 
 ## More About the Link Format for `.md` or `.wiki` files
-
+  
   - (https://gist.github.com/subfuzion/0d3f19c4f780a7d75ba2#gistcomment-2684624)
 
  - For an image named `myimage.jpg` in an **`images` directory (or subdirectory below)**, the linking format follows by file type:
-
+ 
    ### .wiki:
 
        [[images/myimage.jpg]]
        [[/images/myimage.jpg]]
-
      - markdown `!()[]` syntax will not work
 
      `<img src="images/myimage.jpg">`
