@@ -38,7 +38,7 @@ Not always real robot can be used, two versions have been created:
    
   Simulated environment has been coded with `Python3` on `ROS Noetic`. First of all, open Gazebo simulator, in this case, ROS defalut house map is used. On one terminal execute following commands:
 
-    export TURTLEBOT3_MODEL=waffle
+    $export TURTLEBOT3_MODEL=waffle
     roslaunch turtlebot3_gazebo turtlebot3_house.launch
 
   Open new terminal and execute navigation module (is is necessary to have previosly mapped the area):
