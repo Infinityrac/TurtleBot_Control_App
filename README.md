@@ -36,7 +36,7 @@ El objetivo del TFG es desarrollar una interfad de control hombre máquina de ba
      - img tag works but only with relative path
      - does not support figure and figcaption tags
 
-   ### .md:
+   ### test:
 
        [[images/myimage.jpg]]
        [[/images/myimage.jpg]]
