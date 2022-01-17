@@ -18,8 +18,6 @@ El objetivo del TFG es desarrollar una interfad de control hombre máquina de ba
   </a>
 </p>
 
-[![Watch the video](https://youtu.be/<https://youtu.be/j-LswYOt--s>)
-
 
 ## More About the Link Format for `.md` or `.wiki` files
 
