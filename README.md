@@ -18,7 +18,7 @@ El objetivo del TFG es desarrollar una interfad de control hombre máquina de ba
 
 [![Watch the video](https://youtu.be/<https://youtu.be/j-LswYOt--s>)
 
-### .md:
+### test:
 
        [[images/myimage.jpg]]
        [[/images/myimage.jpg]]
