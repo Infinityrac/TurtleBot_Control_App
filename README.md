@@ -1,6 +1,6 @@
 # TURTLEBOT CONTROL APP
 
-Esto es el trabajo final de ingeniería Robótica en la Universidad de Alicante para la asignatura de Robots Móviles. En este, se han desarrollado distintos códigos en Python2 pra que un Turtlebot pueda resolver una serie de tareas. Estas tareas son:
+Esto es el trabajo final de ingeniería Robótica en la Universidad de Alicante para la asignatura de Robots Móviles. En este, se han desarrollado distintos códigos en `Python 2` para que un `Turtlebot` pueda resolver una serie de tareas. Estas tareas son:
 
   - Seguimiento de personas.
   - Grabar/Olvidar rutas.
@@ -9,15 +9,14 @@ Esto es el trabajo final de ingeniería Robótica en la Universidad de Alicante 
   - Ir al home.
   - Control mediante Joystick.
 
-Para ejecutar una tarea u otra, se hace uso de una aplicación android desde la cual podemos conectarnos y enviarle por tcp las tareas que queremos que realice. Todo esto está estructurado dentro de la máquina de estados Smach. De forma que cada vez que la app envía un mensaje al Turtlebot, este comprueba si el mesaje es válido y cambia al estado indicado en el mensaje.
+Para ejecutar una tarea u otra, se hace uso de una `aplicación android` desde la cual podemos conectarnos y enviarle por tcp las tareas que queremos que realice. Todo esto está estructurado dentro de la máquina de estados Smach. De forma que cada vez que la app envía un mensaje al Turtlebot, este comprueba si el mesaje es válido y cambia al estado indicado en el mensaje.
+
+## Entornos de trabajo:
+
+Puesto que no siempore se ha dispuesto
 
 
-## De momento los objetivos son:
-
-- Seguir testeando con MediaPipe.
-- Ver si utilizar la Z que proporciona es factible para la profundidad. (Parece que si pero no es suficiente)
-- Probar a obtener las coordenaadas articulares y pasárselo a una simulación de un brazo robot.
-- Desarrollar una simulación mediante PeterCorke en python3.
+## Video del funcionamiento:
 
 <p align="center">
   <a href="https://youtu.be/j-LswYOt--s">
@@ -25,6 +24,12 @@ Para ejecutar una tarea u otra, se hace uso de una aplicación android desde la 
   </a>
 </p>
 
+## Instalacion:
+
+- Seguir testeando con MediaPipe.
+- Ver si utilizar la Z que proporciona es factible para la profundidad. (Parece que si pero no es suficiente)
+- Probar a obtener las coordenaadas articulares y pasárselo a una simulación de un brazo robot.
+- Desarrollar una simulación mediante PeterCorke en python3.
 
 ## More About the Link Format for `.md` or `.wiki` files
 
