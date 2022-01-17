@@ -18,7 +18,25 @@ El objetivo del TFG es desarrollar una interfad de control hombre máquina de ba
 
 [![Watch the video](https://youtu.be/<https://youtu.be/j-LswYOt--s>)
 
-### test:
+## More About the Link Format for `.md` or `.wiki` files
+
+  - (https://gist.github.com/subfuzion/0d3f19c4f780a7d75ba2#gistcomment-2684624)
+
+ - For an image named `myimage.jpg` in an **`images` directory (or subdirectory below)**, the linking format follows by file type:
+
+   ### .wiki:
+
+       [[images/myimage.jpg]]
+       [[/images/myimage.jpg]]
+
+     - markdown `!()[]` syntax will not work
+
+     `<img src="images/myimage.jpg">`
+    
+     - img tag works but only with relative path
+     - does not support figure and figcaption tags
+
+   ### .md:
 
        [[images/myimage.jpg]]
        [[/images/myimage.jpg]]
@@ -32,4 +50,3 @@ El objetivo del TFG es desarrollar una interfad de control hombre máquina de ba
      - img tag works but only with relative path
 
      `<figure><img src="images/myimage.jpg"><figcaption>image caption</figcaption></figure>`
-
