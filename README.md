@@ -13,7 +13,11 @@ Para ejecutar una tarea u otra, se hace uso de una `aplicación android` desde l
 
 ## Entornos de trabajo:
 
-Puesto que no siempore se ha dispuesto
+Puesto que no siempore se ha tenido acceso al robot, se han creado dos versiones. Una en `Python 2` que permite controlar a un Turtlebot real y otra en `Python 3`, hecha en `ROS Noetic` que permite controlar una simulacion en Gazebo.
+
+### Entorno Simulado:
+
+### Entorno Real:
 
 
 ## Video del funcionamiento:
