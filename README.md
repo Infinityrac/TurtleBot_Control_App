@@ -21,6 +21,24 @@ Puesto que no siempore se ha tenido acceso al robot, se han creado dos versiones
 
     export TURTLEBOT3_MODEL=waffle
     roslaunch turtlebot3_gazebo turtlebot3_house.launch
+
+  Tras esto, abrimos un nuev terminal y ejecutamos los siguientes comandos para iniciar el módulo de navegacion:
+  
+    export TURTLEBOT3_MODEL=waffle
+    roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/house.yaml
+  _Nota: Ambos ficheros del mapa (`.yaml` y `.pgm`) deben estar en el directorio `HOME`._
+    
+  Esto nos abrirá además una ventana de rviz desde la que podremos visualizar el robot, el mapa y la nube de puntos que representa las posibles posiciones del robot. Seleccionando la opción de `2D POSE ESTIMATE` y haciendo click en el mapa en la posición en la que se encuentra el robot en la simulación haremos que la navegación se ubique entorno a ese punto.
+  
+  Una vez hecho esto, ya solo queda ejecutar el programa `main.py` y la app android. La conexión es mediante tcp desde el `puerto: 12343`.
+
+
+  ### Entorno Real:
+  
+  Para el entorno real, se ha programado con `Python 2` en `ROS Kinetic`. Para poder trabajar en este entorno, primero de todo es neceario inicializar el Turtlebot real. Para ello ejecutamos los siguientes dos comandos en terminales distintas.
+
+    export TURTLEBOT3_MODEL=waffle
+    roslaunch turtlebot3_gazebo turtlebot3_house.launch
 _Nota: Ambos ficheros del mapa (`.yaml` y `.pgm`) deben estar en el directorio `HOME`._
 
   Tras esto, abrimos un nuev terminal y ejecutamos los siguientes comandos para iniciar el módulo de navegacion:
@@ -30,11 +48,7 @@ _Nota: Ambos ficheros del mapa (`.yaml` y `.pgm`) deben estar en el directorio `
     
   Esto nos abrirá además una ventana de rviz desde la que podremos visualizar el robot, el mapa y la nube de puntos que representa las posibles posiciones del robot. Seleccionando la opción de `2D POSE ESTIMATE` y haciendo click en el mapa en la posición en la que se encuentra el robot en la simulación haremos que la navegación se ubique entorno a ese punto.
   
-  Una vez hecho esto, ya solo queda ejecutar el programa `main.py` y este se conectará 
-
-
-### Entorno Real:
-
+  Una vez hecho esto, ya solo queda ejecutar el programa `main.py` y la app android. La conexión es mediante tcp desde el `puerto: 12343`.
 
 ## Video del funcionamiento:
 
