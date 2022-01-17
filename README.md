@@ -48,8 +48,9 @@ Not always real robot can be used, two versions have been created:
   Execute code `main.py` and the `Android app`. TCP conexion uses `port:12343`
 
 
-  ### - Entorno Real: <a name="p2.2"/>
+  ### - Real Environment: <a name="p2.2"/>
   
+  Real environment has been coded using `Python 2` on `ROS Kinetic`
   Para el entorno real, se ha programado con `Python 2` en `ROS Kinetic`. Para poder trabajar en este entorno, primero de todo es neceario inicializar el Turtlebot real. Para ello ejecutamos los siguientes dos comandos en terminales distintas.
 
     roslaunch turtlebot_bringup minimal.launch
