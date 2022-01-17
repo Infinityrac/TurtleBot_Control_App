@@ -49,32 +49,35 @@ Not always real robot can be used, two versions have been created:
    
   This will open a rviz window where robot, map and localization point cloud can be seen. Use 2D POSE ESTIMATE to estimate the current position of the robot in the map.
   
-  Execute code `main.py` and the `Android app`. TCP conexion uses `port:12343`
+  Execute code `main.py` and open `Andorid app`. TCP conexion uses `port:12343`
 
 
   ### - Real Environment: <a name="p2.2"/>
   
-  Real environment has been coded using `Python 2` on `ROS Kinetic`
-  Para el entorno real, se ha programado con `Python 2` en `ROS Kinetic`. Para poder trabajar en este entorno, primero de todo es neceario inicializar el Turtlebot real. Para ello ejecutamos los siguientes dos comandos en terminales distintas.
+  Real environment has been coded using `Python 2` on `ROS Kinetic`. `TurtleBot` inicialization is needed, so this following commands must be launched on different terminals:
 
     roslaunch turtlebot_bringup minimal.launch
     roslaunch turtlebot_bringup hokuyo_ust101x.launch
     
-  Tras esto, abrimos un nuev terminal y ejecutamos los siguientes comandos para iniciar el módulo de navegacion:
+  Open new terminal and execute the navigation module:
   
     export TURTLEBOT_3D_SENSOR=astra
     roslaunch turtlebot_navigation amcl_demo.launch map_file:=$HOME/house.yaml
-   _Nota: Ambos ficheros del mapa (`.yaml` y `.pgm`) deben estar en el directorio `HOME`._
+   _Note: Both files (`.yaml` and `.pgm`) must be on `HOME` directory._
     
-  Tras esto, será neceario abrir una ventana de `rviz` desde un ordenador remoto. Para ello ejecutaremos el fichero `setvars.bash` y abriremos una nueva terminal. Desde esta, ejecutaremos el siguiente comando.
+  `TurtleBot` can't open an `rviz`window so another device is needed. On new device execute `setvars.bash`, open a new terminal and execute `rviz`:
   
     rosrun rviz rviz
     
-  Con esto, se nos abrirá `rviz` y ya solo será necesario añadir los módulos correspondientes para que se muestre el mapa, la nube de puntos y el robot. Una vez hecho esto, ya solo queda ejecutar el programa `main.py` y la app android. La conexión es mediante tcp desde el `puerto: 12343`.
+  `rviz` window will be opened. Add modules to show robot, map and point cloud.
+  
+  Execute code `main.py` and open `Andorid app`. TCP conexion uses `port:12343`
+  _Note: in case of port malfunction, change the port and restart the application._
 
-## Video del funcionamiento: <a name="p3"/>
 
-Si hacemos click en el gif, podremos ver un vídeo del funcionamiento del proyecto.
+## Video: <a name="p3"/>
+
+Click on the gif to see a video of the project in action:
 
 <p align="center">
   <a href="https://youtu.be/j-LswYOt--s">
@@ -82,9 +85,8 @@ Si hacemos click en el gif, podremos ver un vídeo del funcionamiento del proyec
   </a>
 </p>
 
-## Creditos: <a name="p4"/>
-
-Proyecto realizado por:
+## Credits: <a name="p4"/>
+Built by:
 
   - Adrián Sanchis Reig
   - Rafael Antón Cabrera
